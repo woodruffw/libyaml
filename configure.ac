@@ -3,7 +3,7 @@
 # Define the package version numbers and the bug reporting link.
 m4_define([YAML_MAJOR], 0)
 m4_define([YAML_MINOR], 1)
-m4_define([YAML_PATCH], 3)
+m4_define([YAML_PATCH], 4)
 m4_define([YAML_BUGS], [http://pyyaml.org/newticket?component=libyaml])
 
 # Define the libtool version numbers; check the Autobook, Section 11.4.
@@ -19,7 +19,7 @@ m4_define([YAML_BUGS], [http://pyyaml.org/newticket?component=libyaml])
 #           YAML_AGE = 0
 m4_define([YAML_RELEASE], 0)
 m4_define([YAML_CURRENT], 2)
-m4_define([YAML_REVISION], 1)
+m4_define([YAML_REVISION], 2)
 m4_define([YAML_AGE], 0)
 
 # Initialize autoconf & automake.
@@ -67,7 +67,7 @@ AC_C_CONST
 AC_TYPE_SIZE_T
 
 # Define Makefiles.
-AC_CONFIG_FILES([include/Makefile src/Makefile Makefile tests/Makefile win32/Makefile])
+AC_CONFIG_FILES([yaml-0.1.pc include/Makefile src/Makefile Makefile tests/Makefile win32/Makefile])
 
 # Generate the "configure" script.
 AC_OUTPUT
